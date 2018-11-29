@@ -3,7 +3,9 @@ import mongoose, { Schema } from "mongoose";
 const productSchema = new Schema({
   _id: Schema.Types.ObjectId,
   price: Number,
-  title: String,
+  description: String,
+  barcode: String,
+  name: String,
   createdby: { type: Schema.Types.ObjectId, ref: "CreatedBy" },
   timestamp: Date
 });
